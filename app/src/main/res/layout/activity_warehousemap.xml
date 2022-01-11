@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner_warehousemap"
+        android:layout_width="433dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/viewpager_warehousemap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager_warehousemap"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_warehousemap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpager_warehousemap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

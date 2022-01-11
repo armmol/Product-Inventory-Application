@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Product_Inventory_Application</string>
+    <string name="title_activity_maps">Map of Products</string>
+</resources>

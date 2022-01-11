@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Packager</string>
+    <string name="google_maps_key">AIzaSyDvsiZ1QiO1CgqYkhEt9FN1VTuBIMgSSP0</string>
+
+    <string name="title_activity_maps">Map of Products</string>
+    <string-array name="images">
+        <item>car1</item>
+        <item>car2</item>
+    </string-array>
+</resources>

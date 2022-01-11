@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintlayout_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6D651FFF">
+
+            <TextView
+                android:id="@+id/txt_cardview_itemid"
+                android:layout_width="51dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#52FFFFFF"
+                android:text="Item-ID"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_cardviewhistory_time"
+                app:layout_constraintEnd_toStartOf="@+id/txt_cardviewhistory_quantity"
+                app:layout_constraintStart_toEndOf="@+id/txt_cardviewhistory_time"
+                app:layout_constraintTop_toTopOf="@+id/txt_cardviewhistory_time"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_cardviewhistory_time"
+                android:layout_width="51dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#52FFFFFF"
+                android:text="Warehouse-ID"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_cardview_itemname"
+                app:layout_constraintEnd_toStartOf="@+id/txt_cardview_itemid"
+                app:layout_constraintStart_toEndOf="@+id/txt_cardview_itemname"
+                app:layout_constraintTop_toTopOf="@+id/txt_cardview_itemname"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txt_cardviewhistory_quantity"
+                android:layout_width="53dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#52FFFFFF"
+                android:text="Quantity"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_cardview_itemid"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_cardview"
+                app:layout_constraintStart_toEndOf="@+id/txt_cardview_itemid"
+                app:layout_constraintTop_toTopOf="@+id/txt_cardview_itemid" />
+
+            <TextView
+                android:id="@+id/txt_cardview_itemname"
+                android:layout_width="125dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="#52FFFFFF"
+                android:text="Item-name"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txt_cardviewhistory_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.551" />
+
+            <ImageView
+                android:id="@+id/imageView_cardview"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_cardviewhistory_quantity"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
